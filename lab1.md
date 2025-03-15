@@ -20,30 +20,41 @@
 
     Результат минимизации: 
 
-    $$F = \overline{X_1} (X_2 \oplus X_3) + X_1 X_2 X_3$$
+    $$F = \overline{X_1 X_2} X_3 + \overline{X_1} X_2 \overline{X_3} + X_1 X_2 X_3$$
 
 2) Привести функцию к базису Шеффера и построить схему ее реализации в этом базисе
 
-Базис Шеффера использует только операцию "И-НЕ" (обозначается $\uparrow$). Преобразуем минимизированную функцию в базис Шеффера.
-Шаг 1: Преобразование
-Используем тождества:
+    Базис Шеффера использует только операцию "И-НЕ" (обозначается $\uparrow$). Преобразуем минимизированную функцию в базис Шеффера.
+    
+    ### Шаг 1: Преобразование
 
-$$A + B = \overline{\overline{A} \overline{B}}$$
+    * Используем тождества:
 
-$$A B = \overline{\overline{A} \uparrow \overline{B}}$$
+    НЕ: $\overline{A} = A \uparrow A$
 
-Преобразуем минимизированную функцию:
+    И: $AB = (A \uparrow B) \uparrow (A \uparrow B)$
+    ИЛИ : $A + B = (A \uparrow A) \uparrow (B \uparrow B)$
 
-$$F = \overline{X_1} (X_2 \oplus X_3) + X_1 X_2 X_3$$
-​
-Выразим $X_2 \oplus X_3$ через базис Шеффера:
+    * Для формулы:
 
-$$X_2 \oplus X_3 = \overline{X_2} X_3 + X_2 \overline{X_3}$$
+    $$F = \overline{X_1 X_2} X_3 + \overline{X_1} X_2 \overline{X_3} + X_1 X_2 X_3$$
 
-Теперь выразим всё через операции "И-НЕ":
+    * Результат:
 
-$$F= \overline{X_1 ↑ \overline{X_2 \oplus X_3}} + \overline{\overline{X_1} \uparrow \overline{X_2 X_3}}$$
+    $$F=(R \uparrow R) \uparrow (V_3 \uparrow V_3)$$
+    * Где:
+        * $R = (V_1 \uparrow V_1) \uparrow (V_2 \uparrow V_2)$
+        * $V_1 = (F_3 \uparrow X_3) \uparrow (F_3 \uparrow X_3)$
+        * $V_2 = (F_5 \uparrow F_4) \uparrow (F_5 \uparrow F_4)$
+        * $V_3 = (F_6 \uparrow X_3) \uparrow (F_6 \uparrow X_3)$
+        * $F_1 = X_1 \uparrow X_1$
+        * $F_2 = X_2 \uparrow X_2$
+        * $F_3 = (F_1 \uparrow F_2) \uparrow (F_1 \uparrow F_2)$
+        * $F_4 = X_3 \uparrow X_3$
+        * $F_5 = (F_1 \uparrow X_2) \uparrow (F_1 \uparrow X_2)$
+        * $F_6 = (X_1 \uparrow X_2) \uparrow (X_1 \uparrow X_2)$
 
-Шаг 2: Построение схемы
+    ### Шаг 2: Построение схемы
 
-См. Этот файл
+    См. Этот файл
+    Здесь будет черновик просчета формулы
