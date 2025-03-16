@@ -43,6 +43,7 @@
     * Результат:
 
     $$F=(R \uparrow R) \uparrow (V_3 \uparrow V_3)$$
+   
     * Где:
         * $R = (V_1 \uparrow V_1) \uparrow (V_2 \uparrow V_2)$
         * $V_1 = (F_3 \uparrow X_3) \uparrow (F_3 \uparrow X_3)$
@@ -81,13 +82,24 @@
 
     * Результат:
 
-    Результата нет :confused: но вы не переживайте :grin:
+    $$F=(R \downarrow R) \downarrow (V_3 \downarrow V_3)$$
+   
+    * Где:
+        * $R = (V_1 \downarrow V_2) \downarrow (V_1 \downarrow V_2)$
+        * $V_1 = (F_4 \downarrow F_4) \downarrow (X_3 \downarrow X_3)$
+        * $V_2 = (F_5 \downarrow F_5) \downarrow (F_3 \downarrow F_3)$
+        * $V_3 = (F_6 \downarrow F_6) \downarrow (X_3 \downarrow X_3)$
+        * $F_1 = X_1 \downarrow X_1$
+        * $F_2 = X_2 \downarrow X_2$
+        * $F_3 = X_3 \downarrow X_3$
+        * $F_4 = (F_1 \downarrow F_1) \downarrow (F_2 \downarrow F_2)$
+        * $F_5 = (F_1 \downarrow F_1) \downarrow (X_2 \downarrow X_2)$
+        * $F_6 = (X_1 \downarrow X_1) \downarrow (X_2 \downarrow X_2)$
     
     ### Шаг 2: Построение схемы
 
-    См... Смотреть тоже нечего :cry:
+    См. `Pierce.ms11`
    
-    Черновик просчета формулы... Вот котик)
-
+    Черновик просчета формулы
+    ![draft2](https://github.com/user-attachments/assets/97457749-3877-4cd2-9453-15d7c77f9ded)
     ![very cool cat](https://github.com/user-attachments/assets/8a233d22-e6f9-4f3b-a0be-c72c702f3c3c)
-   
